@@ -35,6 +35,8 @@ container.addEventListener('mouseleave', () => {
 
 $(document).ready(function() {
 
+    new WOW().init();
+
     // Navbar Sticky top
     navbarSticky();
 
@@ -55,10 +57,58 @@ $(document).ready(function() {
         }
     }
 
-    function hello() {
-       window.alert("hello");
-    }
 
+    $(".sass").click( () => {
+        $(".html").removeClass("active");
+        $(".jquery").removeClass("active");
+        $(".vue").removeClass("active");
+        $(".sass").addClass("active");
+    })
+
+    $(".html").click( () => {
+        $(".html").addClass("active");
+        $(".jquery").removeClass("active");
+        $(".vue").removeClass("active");
+        $(".sass").removeClass("active");
+    })
+
+    $(".jquery").click( () => {
+        $(".html").removeClass("active");
+        $(".jquery").addClass("active");
+        $(".vue").removeClass("active");
+        $(".sass").removeClass("active");
+    })
+
+    $(".vue").click( () => {
+        $(".html").removeClass("active");
+        $(".jquery").removeClass("active");
+        $(".vue").addClass("active");
+        $(".sass").removeClass("active");
+    })
+
+
+    $('.humberger').click(function(){
+        $(this).toggleClass('humberger-change');
+        $(".menu").toggleClass("left-0");
+    });
     
+
+    $('.owl-carousel').owlCarousel({
+        rtl: true,
+        loop: false,
+        margin: 10,
+        nav: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
 
 });

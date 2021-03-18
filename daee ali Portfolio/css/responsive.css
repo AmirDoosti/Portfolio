@@ -1,0 +1,125 @@
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 75%;
+  }
+  #header_mobile {
+    width: 100%;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem 2rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 6;
+    top: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px gray;
+            box-shadow: 0 0 10px gray;
+  }
+  #header_mobile .humberger {
+    height: 25px;
+    width: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 10;
+  }
+  #header_mobile .humberger span {
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--our-green);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #header_mobile .humberger-change span:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(5px, 4.5px);
+            transform: rotate(45deg) translate(5px, 4.5px);
+  }
+  #header_mobile .humberger-change span:nth-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0px, 0px);
+            transform: rotate(-45deg) translate(0px, 0px);
+  }
+  #header_mobile .humberger-change span:nth-child(3) {
+    opacity: 0;
+  }
+  #header_mobile .menu {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    top: 0;
+    right: -100%;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+  #header_mobile .menu .menu_items {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #header_mobile .menu .menu_items ul {
+    text-align: center;
+  }
+  #header_mobile .menu .menu_items li {
+    margin: 4vh 0;
+  }
+  #header_mobile .menu .menu_items a {
+    font-size: 2rem;
+    color: #fff;
+  }
+  #header {
+    display: none;
+  }
+  #hero .skill,
+  #who_i_am .skill {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 77%;
+  }
+  #header_mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 82%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 87%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

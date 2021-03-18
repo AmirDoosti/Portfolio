@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/animate.min.css"/>
     <!--css animation -->
     <link rel="stylesheet" href="styles/hover-min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl.theme.default.css">
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -22,13 +25,47 @@
 
 <body>
 
+
+    <!-- mobile menu -->
+    <div id="mobile_header">
+        <!-- humberger -->
+        <div class="humberger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <h4> A.Doosti </h4>
+        </div>
+
+        <!-- opening-menu -->
+        <div class="menu">
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#about"> About </a> </li>
+                    <li> <a href="#projects"> Projects </a> </li>
+                    <li> <a href="#footer"> Contact </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+
+
+
+
+
     <!-- Header area -->
     <header id="header">
         <nav class="navbar">
             <ul>
-                <li> <a href="#"> Home </a> </li>
-                <li> <a href="#about"> About </a> </li>
-                <li> <a href="#footer"> Contact </a> </li>
+                <li> <a class="nav-item" href="#"> Home </a> </li>
+                <li> <a class="nav-item" href="#about"> About </a> </li>
+                <li> <a class="nav-item" href="#projects"> Projects </a> </li>
+                <li> <a class="nav-item" href="#footer"> Contact </a> </li>
             </ul>
         </nav>
         <div class="logo">
@@ -42,7 +79,7 @@
         <!-- Hero Section Area -->
         <section id="hero">
 
-            <div class="card_container animate__animated animate__zoomInDown">
+            <div class="card_container wow animate__animated animate__zoomInDown" data-wow-duration="1s">
 
                 <div class="card">
 
@@ -54,13 +91,13 @@
                         <h2 class="title"> Amir Doosti </h2>
                         <p class="desc"> FrontEnd Developer </p>
                         <div class="size">
-                            <button> HTML </button>
-                            <button> Sass </button>
-                            <button> Jquery </button>
-                            <button> Vue.js </button>
+                            <button class="html active"> HTML </button>
+                            <button class="sass"> Sass </button>
+                            <button class="jquery"> Jquery </button>
+                            <button class="vue"> Vue.js </button>
                         </div>
                         <div class="buy">
-                            <button>
+                            <button class="hvr-radial-out">
                                 Hire Me
                             </button>
                         </div>
@@ -75,20 +112,19 @@
         <section id="about">
             <div class="container">
                 <div class="row">
-
                     <div class="col-md-5">
-                        <div class="img-container">
+                        <div class="img-container wow animate__fadeIn text-center" data-wow-duration="3s">
                             <img src="img/profile.jpg" class="img-thumbnail" alt="profile">
                         </div>
                     </div>
 
                     <div class="col-md-7">
 
-                        <div class="card">
+                        <div class="card" >
                             <div class="card-body">
                                 <small class="card-subtitle"><strong> ABOUT ME </strong></small>
-                                <h1 class="card-title">Who Am I</h1>
-                                <p class="card-text">
+                                <h1 class="card-title wow animate__fadeInUp" data-wow-duration="1.2s">Who Am I</h1>
+                                <p class="card-text wow animate__fadeInUp" data-wow-duration="1.2s">
                                     My name is Amir Doosti im a creative freelancer and My name is Amir Doosti im a My
                                     name is Amir Doosti im a creative freelancer and full stack developer i have work in
                                     couple places in frontend cases and js express indeed. creative freelancer and full
@@ -96,7 +132,7 @@
                                     indeed. full stack developer i have work in couple places in frontend cases and js
                                     express indeed.
                                 </p>
-                                <p>
+                                <p class="wow animate__fadeInUp" data-wow-duration="1.2s">
                                     My My name is Amir Doosti im a creative freelancer and full stack developer i have
                                     work in couple places in frontend cases and js express indeed.name is Amir Doosti im
                                     a creative freelancer and full stack developer i have work in couple places in
@@ -110,7 +146,7 @@
 
                                         <div class="col-lg-4 col-6  my-2">
                                             <!-- 1 -->
-                                            <div class="language">
+                                            <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
                                                 <p class="mb-1"> Html5 </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
@@ -125,7 +161,7 @@
                                         <!-- 2 -->
                                         <div class="col-lg-4 col-6  my-2">
 
-                                            <div class="language">
+                                            <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
                                                 <p class="mb-1"> Jquery </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
@@ -140,7 +176,7 @@
                                         <!-- 3 -->
                                         <div class="col-lg-4 col-6  my-2">
 
-                                            <div class="language">
+                                            <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
                                                 <p class="mb-1"> Css3 </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
@@ -155,7 +191,7 @@
                                         <!-- 4 -->
                                         <div class="col-lg-4 col-6  my-2">
 
-                                            <div class="language">
+                                            <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
                                                 <p class="mb-1"> Sass </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
@@ -170,7 +206,7 @@
                                         <!-- 5 -->
                                         <div class="col-lg-4 col-6  my-2">
 
-                                            <div class="language">
+                                            <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
                                                 <p class="mb-1"> VueJs </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
@@ -185,7 +221,7 @@
                                         <!-- 6 -->
                                         <div class="col-lg-4 col-6  my-2">
 
-                                            <div class="language">
+                                            <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
                                                 <p class="mb-1"> JavaScript </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
@@ -223,65 +259,108 @@
         <!-- Services Section Area -->
         <section id="projects">
             <div class="container-fluid">
+
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="text-center mb-5">
-                            <h4 class="title"> My Projects </h4>
+
+                        <div class="text-center mb-5 wow animate__fadeIn" data-wow-duration="2s">
+                            <h4 class="title"> Some of my projects <i class="fa fa-picture-o ml-1"></i> </h4>
                         </div>
-                    </div>
-                    <!-- 1 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <a href="http://elittdg.com/" target="_blank">
-                            <div class="img-container">
-                                <img src="img/Screenshot1.png" class="project-img img-fluid" alt="project_image">
+
+                        <div class="owl-carousel owl-theme wow animate__fadeIn" data-wow-duration="2s">
+                            <!-- 1 -->
+                            <!-- <div class="item">
+                                <div>
+                                    <a href="http://www.elittdg.com/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot1.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                            <!-- 2 -->
+                            <div class="item">
+                                <div>
+                                    <a href="https://payaab.ir/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot2.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <!-- 2 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <a href="https://payaab.ir/" target="_blank">
-                            <div class="img-container">
-                                <img src="img/Screenshot2.png" class="project-img img-fluid" alt="project_image">
+                            <!-- 3 -->
+                            <div class="item">
+                                <div>
+                                    <a href="http://templates.elittdg.com/luxury/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot3.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <!-- 3 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <a href="http://templates.elittdg.com/luxury/" target="_blank">
-                            <div class="img-container">
-                                <img src="img/Screenshot3.png" class="project-img img-fluid" alt="project_image">
+                            <!-- 4 -->
+                            <div class="item">
+                                <div>
+                                    <a href="http://templates.elittdg.com/building/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot4.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <!-- 4 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <a href="http://templates.elittdg.com/building/" target="_blank">
-                            <div class="img-container">
-                                <img src="img/Screenshot4.png" class="project-img img-fluid" alt="project_image">
+                             <!-- 5 -->
+                            <div class="item">
+                                <div>
+                                    <a href="http://templates.elittdg.com/game-center/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot5.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
+                            <!-- 6 -->
+                            <div class="item">
+                                <div>
+                                    <a href="http://templates.elittdg.com/Shine/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot6.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="item">
+                                <div>
+                                    <a href="http://morerami.ir/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot7.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="item">
+                                <div>
+                                    <a href="http://proshop-rtmeysam.fandogh.cloud/" target="_blank">
+                                        <div class="img-container">
+                                            <img src="img/Screenshot8.png" class="project-img img-fluid"
+                                                alt="project_image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <div class="row mt-4">
-                    <!-- 5 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <a href="http://templates.elittdg.com/game-center/" target="_blank">
-                            <div class="img-container">
-                                <img src="img/Screenshot5.png" class="project-img img-fluid" alt="project_image">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- 6 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <a href="http://templates.elittdg.com/Shine/" target="_blank">
-                            <div class="img-container">
-                                <img src="img/Screenshot6.png" class="project-img img-fluid" alt="project_image">
-                            </div>
-                        </a>
-                    </div>
                 </div>
 
             </div>
@@ -309,17 +388,15 @@
 
 
     <!-- Script Files importing -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
+    <!-- bootstrap, jquery, popper js files -->
     <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- owl carousel slider -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- wow aniamtion -->
+    <script src="js/wow.min.js"></script>
+    <!-- main js file -->
     <script src="js/main.js"></script>
 
 </body>

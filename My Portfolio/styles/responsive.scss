@@ -1,32 +1,115 @@
-
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 600px) { 
+@media (max-width: 767px) {
+  html {
+    font-size: 80%;
+  }
 
-    html {
-        font-size: 80%;
+  #header {
+    display: none;
+  }
+
+  #mobile_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    height: 7vh;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px var(--gray);
+
+    .humberger {
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+
+      span {
+        height: 2px;
+        border-radius: 2px;
+        width: 100%;
+        background-color: #000;
+        transition: all 0.5s ease;
+      }
     }
 
+    .humberger-change span:nth-child(1) {
+      transform: rotate(45deg) translateY(4px);
+      position: relative;
+      width: 20px !important;
+      top: 0.5px;
+    }
+
+    .humberger-change span:nth-child(2) {
+      transform: rotate(-45deg) translateY(-4px);
+      width: 20px !important;
+    }
+
+    .humberger-change span:nth-child(3) {
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    .menu {
+      position: fixed;
+      height: 93vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 10;
+      top: 7vh;
+      left: -100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          margin: 5vh 0;
+          a {
+            font-size: 1.5rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .left-0 {
+      left: 0 !important;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    html {
-        font-size: 82%;
-    }
- }
+@media (min-width: 768px) {
+  html {
+    font-size: 82%;
+  }
+
+  #mobile_header {
+    display: none;
+  }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    html {
-        font-size: 85%;
-    }
- }
+@media (min-width: 992px) {
+  html {
+    font-size: 85%;
+  }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-    html {
-        font-size: 90%;
-    }
-
+@media (min-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
 }

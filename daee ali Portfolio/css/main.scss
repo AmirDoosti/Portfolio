@@ -1,0 +1,363 @@
+/************
+variables
+************/
+
+:root {
+  --our-green: #40e0d0;
+  --our-gray: #f8f8f8;
+  --top-footer: #e9e9e9;
+}
+
+/************
+fonts
+************/
+
+@font-face {
+  src: url(../fonts/Yekan.woff);
+  font-family: yekan;
+}
+@font-face {
+  src: url(../fonts/fa-brands-400.eot);
+  font-family: brands;
+}
+@font-face {
+  src: url(../fonts/IRANYekanRegularFaNum.ttf);
+  font-family: faNum;
+}
+
+/************
+General Styles
+************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: yekan, faNum;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  font-family: yekan, faNum;
+  transition: 0.4s;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/************
+General Classes
+************/
+
+.our-btn {
+  padding: 0.375em 1.8em;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+.outline-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 80px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid#fff;
+    color: var(--our-blue);
+  }
+}
+
+.outline-btn-2 {
+  background-color: transparent;
+  border: 2px solid var(--our-blue);
+  color: var(--our-blue);
+  border-radius: 80px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: var(--our-blue);
+    border: 2px solid var(--our-blue);
+    color: #fff;
+  }
+}
+
+.inline-btn {
+  background-color: #3a96ff;
+  border: 2px solid #3a96ff;
+  color: #fff;
+  border-radius: 80px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: unset;
+    color: var(--our-blue);
+  }
+}
+
+.card {
+  border: 0;
+  background: none;
+  border-radius: unset;
+}
+
+.card-footer {
+  background-color: unset;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.scrolledDown {
+  top: 0% !important;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px gray;
+  z-index: 5;
+}
+
+.scrolledDown-mobile {
+  top: 0% !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 0 10px gray;
+  z-index: 5;
+}
+
+.right-100 {
+  right: 0 !important;
+}
+
+/* Removing outline of bootstrap 4 form inputs */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 0 0px transparent inset, 0 0 0px transparent;
+  outline: 0 none;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+
+  position: fixed;
+  transition: all 0.5s ease;
+
+  .navbar li a,
+  .logo {
+    color: #000;
+  }
+
+  .navbar ul {
+    display: flex;
+  }
+
+  .navbar ul li:not(:last-child) {
+    margin-left: 1rem;
+  }
+}
+
+#hero {
+  min-height: 60vh;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   background: url(../img/portfolio-background.jpg) no-repeat fixed;
+  //   background-size: cover;
+
+  .card {
+    .profile-img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 30px rgb(182, 182, 182);
+      position: relative;
+      top: 20px;
+      border-radius: 8px;
+    }
+    .skill {
+      background-color: var(--our-green);
+      width: 250%;
+      z-index: -1;
+      color: rgba(0, 0, 0, 0.7);
+      padding: 0.4rem;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+#what_i_do {
+  min-height: 70vh;
+  padding: 5rem 0;
+  margin-top: 2rem;
+  background: url(../img/portfolio-background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+
+  .title {
+    color: var(--our-green);
+  }
+
+  .card {
+    p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#who_i_am {
+  padding: 4rem 0;
+
+  .profile-img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px rgb(182, 182, 182);
+    border-radius: 8px;
+  }
+
+  .skill {
+    background-color: var(--our-green);
+    width: 210%;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.4rem;
+  }
+}
+
+#my_work {
+  min-height: 90vh;
+  padding: 4rem 0;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  .subtitle {
+    color: var(--our-green);
+  }
+
+  .img-container {
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    .work-img {
+      transition: all 0.5s ease;
+      height: 230px;
+    }
+
+    .bg {
+      position: absolute;
+      background-color: var(--our-green);
+      opacity: 0;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  }
+
+  .img-container:hover .work-img {
+    transform: scale(1.2) rotate(5deg);
+  }
+
+  .img-container:hover .bg {
+    opacity: 0.3;
+  }
+}
+
+#footer {
+  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .card-title {
+    color: var(--our-green);
+  }
+
+  .card-text {
+    a:not(:last-child) {
+      margin-left: 3rem;
+    }
+    a {
+      font-size: 1.5rem;
+      color: var(--our-green);
+    }
+  }
+}
