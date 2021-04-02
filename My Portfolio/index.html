@@ -43,7 +43,7 @@
         <div class="menu">
             <nav class="navbar">
                 <ul>
-                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#hero"> Home </a> </li>
                     <li> <a href="#about"> About </a> </li>
                     <li> <a href="#projects"> Projects </a> </li>
                     <li> <a href="#footer"> Contact </a> </li>
@@ -62,7 +62,7 @@
     <header id="header">
         <nav class="navbar">
             <ul>
-                <li> <a class="nav-item" href="#"> Home </a> </li>
+                <li> <a class="nav-item" href="#hero"> Home </a> </li>
                 <li> <a class="nav-item" href="#about"> About </a> </li>
                 <li> <a class="nav-item" href="#projects"> Projects </a> </li>
                 <li> <a class="nav-item" href="#footer"> Contact </a> </li>
@@ -79,7 +79,7 @@
         <!-- Hero Section Area -->
         <section id="hero">
 
-            <div class="card_container wow animate__animated animate__zoomInDown" data-wow-duration="1s">
+            <div class="card_container wow animate__animated animate__zoomInDown" data-wow-duration="1s" data-wow-delay="3s">
 
                 <div class="card">
 
@@ -114,7 +114,7 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="img-container wow animate__fadeIn text-center" data-wow-duration="3s">
-                            <img src="img/profile.jpg" class="img-thumbnail" alt="profile">
+                            <img src="img/profile.png" alt="profile">
                         </div>
                     </div>
 
@@ -124,20 +124,12 @@
                             <div class="card-body">
                                 <small class="card-subtitle"><strong> ABOUT ME </strong></small>
                                 <h1 class="card-title wow animate__fadeInUp" data-wow-duration="1.2s">Who Am I</h1>
-                                <p class="card-text wow animate__fadeInUp" data-wow-duration="1.2s">
-                                    My name is Amir Doosti im a creative freelancer and My name is Amir Doosti im a My
-                                    name is Amir Doosti im a creative freelancer and full stack developer i have work in
-                                    couple places in frontend cases and js express indeed. creative freelancer and full
-                                    stack developer i have work in couple places in frontend cases and js express
-                                    indeed. full stack developer i have work in couple places in frontend cases and js
-                                    express indeed.
+                                <p class="card-text wow animate__fadeInUp mb-2" data-wow-duration="1.2s">
+                                    My name is Amir Mohammad Doosti im a creative freelancer and frontend developer i have
+                                    worked in couple places in frontend cases and js animations.
                                 </p>
                                 <p class="wow animate__fadeInUp" data-wow-duration="1.2s">
-                                    My My name is Amir Doosti im a creative freelancer and full stack developer i have
-                                    work in couple places in frontend cases and js express indeed.name is Amir Doosti im
-                                    a creative freelancer and full stack developer i have work in couple places in
-                                    frontend cases and js express indeed.
-
+                                    Im 22 years old , programming for 2 years and i have got graduated from university at Masters.
                                 </p>
 
                                 <!-- skilss -->
@@ -183,7 +175,7 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
 
@@ -198,7 +190,7 @@
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star"></i>
                                                 </div>
                                             </div>
 
@@ -222,12 +214,12 @@
                                         <div class="col-lg-4 col-6  my-2">
 
                                             <div class="language wow animate__fadeInUp" data-wow-duration="1.2s">
-                                                <p class="mb-1"> JavaScript </p>
+                                                <p class="mb-1"> React </p>
                                                 <div class="stars d-flex">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
                                                     <i class="fa fa-star-half-o"></i>
                                                 </div>
                                             </div>
@@ -240,7 +232,7 @@
                                 </div>
                                 <!-- end of skills -->
 
-                                <a href="#x" class="our-btn mt-4 hvr-radial-out">DOWNLOAD CV</a>
+                                <a href="#x" class="our-btn mt-4 hvr-radial-out"> Check me out </a>
 
                             </div>
                             <!-- end of card-body -->
@@ -387,6 +379,25 @@
     </footer>
 
 
+    <div id="intro">
+        
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text-of-intro text-white-50"> Welcome To </span>
+            </h1>
+            <h1 class="hide">
+                <span class="text-of-intro text-white-50"> My Page </span>
+            </h1>
+            <h1 class="hide">
+                <span class="text-of-intro text-white"> People. </span>
+            </h1>
+        </div>
+
+    </div>
+
+    <div id="slider"></div>
+
+
     <!-- Script Files importing -->
     <!-- bootstrap, jquery, popper js files -->
     <script src="js/jquery-3.5.0.js"></script>
@@ -397,6 +408,7 @@
     <!-- wow aniamtion -->
     <script src="js/wow.min.js"></script>
     <!-- main js file -->
+    <script src="js/gsap.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

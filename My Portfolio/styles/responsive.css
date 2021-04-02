@@ -73,7 +73,9 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 10;
     top: 7vh;
-    left: -100%;
+    left: 0;
+    -webkit-clip-path: circle(0% at 8% -4%);
+            clip-path: circle(0% at 8% -4%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -83,8 +85,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
   }
   #mobile_header .menu .navbar {
     display: -webkit-box;
@@ -105,7 +107,8 @@
     color: #fff;
   }
   #mobile_header .left-0 {
-    left: 0 !important;
+    -webkit-clip-path: circle(150% at 80% 5%);
+            clip-path: circle(150% at 80% 5%);
   }
 }
 
