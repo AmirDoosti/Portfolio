@@ -1,0 +1,15 @@
+kind: ExternalService
+name: portfolio
+spec:
+  allow_http: false
+  disable_default_domains: false
+  domains:
+    - name: amirdoosti.ir
+    - name: www.amirdoosti.ir
+  image_pull_policy: Always
+  port: 80
+  source:
+    context: .
+    project_type: static_website
+  resources:
+    memory: 50Mi
