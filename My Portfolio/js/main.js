@@ -4,8 +4,8 @@ let card = document.querySelector(".card");
 let title = document.querySelector('.title');
 let desc = document.querySelector('.desc');
 let profile = document.querySelector('.profile');
-let size = document.querySelector('.size');
-let buy = document.querySelector('.buy');
+let skills = document.querySelector('.skills');
+let hire = document.querySelector('.hire');
 
 container.addEventListener("mousemove", (e) => {
     let coordinateX = ( (window.innerWidth / 2 - e.pageX) / 12);
@@ -15,22 +15,22 @@ container.addEventListener("mousemove", (e) => {
 });
 
 container.addEventListener("mouseenter", () => {
-    title.classList.add('trans');
-    desc.classList.add('trans');
-    profile.classList.add('trans');
-    size.classList.add('trans');
-    buy.classList.add('trans');
+    title.style.transform=`translateZ(90px)`;
+    desc.style.transform=`translateZ(90px)`;
+    profile.style.transform=`translateZ(90px)`;
+    skills.style.transform=`translateZ(90px)`;
+    hire.style.transform=`translateZ(90px)`;
 });
 
 container.addEventListener('mouseleave', () => {
     card.style.transform = `rotateY(0deg)`;
     card.style.transition = `all 1s ease`;
 
-    title.classList.remove('trans');
-    desc.classList.remove('trans');
-    profile.classList.remove('trans');
-    size.classList.remove('trans');
-    buy.classList.remove('trans');
+    title.style.transform=`translateZ(0px)`;
+    desc.style.transform=`translateZ(0px)`;
+    profile.style.transform=`translateZ(0px)`;
+    skills.style.transform=`translateZ(0px)`;
+    hire.style.transform=`translateZ(0px)`;
 });
 
 
