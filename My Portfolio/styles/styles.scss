@@ -189,20 +189,20 @@ main {
     }
 
     .size {
-      margin-top: 2em;
-      margin-bottom: 3em;
+      margin: 2em 0;
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
       transition: all 1s ease;
 
       > * {
-        flex: 1 1 auto;
+        flex: 1 1 33.33%;
         border: 0;
         background-color: #fff;
         box-shadow: 0 0 10px gray;
         border-radius: 50px;
         padding: 0.175em;
+        margin: 0.5rem;
       }
 
       button.active {
@@ -213,7 +213,9 @@ main {
 
     .buy {
       transition: all 1s ease;
-      button {
+      a {
+        display: inline-block;
+        text-align: center;
         width: 100%;
         background: linear-gradient(to right, pink, lightblue);
         border: 0;
@@ -221,11 +223,6 @@ main {
         border-radius: 50px;
         padding: 0.575em;
         cursor: pointer;
-      }
-
-      .hvr-radial-out:before {
-        background-color: lightblue;
-        transition: all 0.5s ease !important;
       }
     }
   }
@@ -259,11 +256,6 @@ main {
         color: var(--gold);
         border: 1px solid var(--gold);
       }
-    }
-
-    .hvr-radial-out::before {
-      background: var(--dark) !important;
-      transition: all 0.5s ease !important;
     }
 
     .card-subtitle {
@@ -306,7 +298,7 @@ main {
 }
 
 #projects {
-  padding: 4rem 0 5rem 0;
+  padding: 6rem 0 5rem 0;
   background: var(--dark);
 
   .title {
@@ -323,35 +315,18 @@ main {
       border-radius: 6px;
       box-shadow: 0 0 10px var(--dark-green);
       transition: all 0.5s ease;
-      filter: grayscale(1);
+      filter: grayscale(0);
     }
 
     &:hover {
       cursor: pointer;
     }
-
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     height: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     background-color: var(--dark-green);
-    //     opacity: 0.3;
-    //     transition: all .5s ease;
-    //     border-radius: 6px;
-    // }
   }
 
   .img-container:hover .project-img {
     transform: scale(1.4) rotate(3deg);
-    filter: grayscale(0);
+    filter: grayscale(1);
   }
-
-  // .img-container:hover.img-container::after {
-  //     opacity: 0;
-  // }
 
   .owl-theme .owl-dots .owl-dot {
     outline: unset;
@@ -389,8 +364,8 @@ main {
   justify-content: center;
   .intro-text {
     .hide {
-      font-size: 4rem;
-      font-family: "Rancho", cursive;
+      font-size: 3.5rem;
+      font-family: sans-serif;
       font-weight: lighter;
       overflow: hidden;
       padding: 0.2rem 0;
@@ -411,4 +386,12 @@ main {
   height: 100%;
   z-index: 20;
   transform: translateY(100%);
+}
+
+.trans {
+  transform: translateZ(90px);
+}
+
+.trans-0 {
+  transform: translateZ(0px);
 }

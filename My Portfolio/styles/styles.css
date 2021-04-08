@@ -227,8 +227,7 @@ main {
 }
 
 #hero .card .size {
-  margin-top: 2em;
-  margin-bottom: 3em;
+  margin: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,14 +240,15 @@ main {
 
 #hero .card .size > * {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
   border: 0;
   background-color: #fff;
   -webkit-box-shadow: 0 0 10px gray;
           box-shadow: 0 0 10px gray;
   border-radius: 50px;
   padding: 0.175em;
+  margin: 0.5rem;
 }
 
 #hero .card .size button.active {
@@ -261,7 +261,9 @@ main {
   transition: all 1s ease;
 }
 
-#hero .card .buy button {
+#hero .card .buy a {
+  display: inline-block;
+  text-align: center;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(pink), to(lightblue));
   background: linear-gradient(to right, pink, lightblue);
@@ -270,12 +272,6 @@ main {
   border-radius: 50px;
   padding: 0.575em;
   cursor: pointer;
-}
-
-#hero .card .buy .hvr-radial-out:before {
-  background-color: lightblue;
-  -webkit-transition: all 0.5s ease !important;
-  transition: all 0.5s ease !important;
 }
 
 #about {
@@ -311,12 +307,6 @@ main {
   border: 1px solid var(--gold);
 }
 
-#about .card .hvr-radial-out::before {
-  background: var(--dark) !important;
-  -webkit-transition: all 0.5s ease !important;
-  transition: all 0.5s ease !important;
-}
-
 #about .card .card-subtitle {
   position: relative;
   padding-left: 35px;
@@ -350,7 +340,7 @@ main {
 }
 
 #projects {
-  padding: 4rem 0 5rem 0;
+  padding: 6rem 0 5rem 0;
   background: var(--dark);
 }
 
@@ -372,8 +362,8 @@ main {
           box-shadow: 0 0 10px var(--dark-green);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 #projects .img-container:hover {
@@ -383,8 +373,8 @@ main {
 #projects .img-container:hover .project-img {
   -webkit-transform: scale(1.4) rotate(3deg);
           transform: scale(1.4) rotate(3deg);
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 #projects .owl-theme .owl-dots .owl-dot {
@@ -430,8 +420,8 @@ main {
 }
 
 #intro .intro-text .hide {
-  font-size: 4rem;
-  font-family: "Rancho", cursive;
+  font-size: 3.5rem;
+  font-family: sans-serif;
   font-weight: lighter;
   overflow: hidden;
   padding: 0.2rem 0;
@@ -453,5 +443,15 @@ main {
   z-index: 20;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+}
+
+.trans {
+  -webkit-transform: translateZ(90px);
+          transform: translateZ(90px);
+}
+
+.trans-0 {
+  -webkit-transform: translateZ(0px);
+          transform: translateZ(0px);
 }
 /*# sourceMappingURL=styles.css.map */

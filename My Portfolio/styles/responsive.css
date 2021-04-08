@@ -110,6 +110,9 @@
     -webkit-clip-path: circle(150% at 80% 5%);
             clip-path: circle(150% at 80% 5%);
   }
+  #hero {
+    background-position: left;
+  }
 }
 
 @media (min-width: 768px) {

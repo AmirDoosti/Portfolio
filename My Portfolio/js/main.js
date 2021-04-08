@@ -15,21 +15,22 @@ container.addEventListener("mousemove", (e) => {
 });
 
 container.addEventListener("mouseenter", () => {
-    title.style.transform = `translateZ(90px)`;
-    desc.style.transform = `translateZ(90px)`;
-    profile.style.transform = `translateZ(90px)`;
-    size.style.transform = `translateZ(90px)`;
-    buy.style.transform = `translateZ(90px)`;
+    title.classList.add('trans');
+    desc.classList.add('trans');
+    profile.classList.add('trans');
+    size.classList.add('trans');
+    buy.classList.add('trans');
 });
 
 container.addEventListener('mouseleave', () => {
     card.style.transform = `rotateY(0deg)`;
     card.style.transition = `all 1s ease`;
-    title.style.transform = `translateZ(0px) translateX(0%)`;
-    desc.style.transform = `translateZ(0px)`;
-    profile.style.transform = `translateZ(0px)`;
-    size.style.transform = `translateZ(0px)`;
-    buy.style.transform = `translateZ(0px)`;
+
+    title.classList.remove('trans');
+    desc.classList.remove('trans');
+    profile.classList.remove('trans');
+    size.classList.remove('trans');
+    buy.classList.remove('trans');
 });
 
 
