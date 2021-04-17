@@ -95,7 +95,6 @@ $(document).ready(function() {
     
 
     $('.owl-carousel').owlCarousel({
-        rtl: true,
         loop: false,
         margin: 10,
         nav: true,
@@ -107,6 +106,9 @@ $(document).ready(function() {
                 items:2
             },
             1000:{
+                items:3
+            },
+            1250:{
                 items:4
             }
         }
@@ -123,3 +125,30 @@ tl.to('#intro', { y:'-100%',duration:1 }, '=-1');
 tl.fromTo('.logo', {opacity:'0', x:'20%'}, {opacity:'1', x:'0%' , duration:1} );
 tl.fromTo('.navbar', {opacity:'0'}, {opacity:'1', duration:1}, '=-1' );
 tl.fromTo('.humberger', {opacity:'0'}, {opacity:'1', duration:1}, '=-1' );
+
+
+const texts = ['amir doosti', 'frontend developer', 'css fan', 'freelancer'];
+let count = 0;
+let index = 0;
+
+let currentText = '';
+let letter = '';
+
+(function type(){
+
+    if(count === texts.length){
+        count = 0;
+    }
+
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector('.typing').textContent = letter;
+    if(letter.length === currentText.length ) {
+        count++;
+        index = 0;
+    }
+
+    setTimeout(type, 400);
+
+}());

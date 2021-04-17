@@ -8,7 +8,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <!-- animate css -->
-    <link rel="stylesheet" href="styles/animate.min.css"/>
+    <link rel="stylesheet" href="styles/animate.min.css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Owl Carousel -->
@@ -34,7 +34,7 @@
         </div>
 
         <div class="logo">
-            <h4> A.Doosti </h4>
+            <h4 class="mb-0"> A.Doosti </h4>
         </div>
 
         <!-- opening-menu -->
@@ -72,7 +72,8 @@
         <!-- Hero Section Area -->
         <section id="hero">
 
-            <div class="card_container wow animate__animated animate__zoomInDown" data-wow-duration="1s" data-wow-delay="3s">
+            <div class="card_container wow animate__animated animate__zoomInDown" data-wow-duration="1s"
+                data-wow-delay="3s">
 
                 <div class="card">
 
@@ -113,16 +114,19 @@
 
                     <div class="col-md-7">
 
-                        <div class="card" >
+                        <div class="card">
                             <div class="card-body">
                                 <small class="card-subtitle"><strong> ABOUT ME </strong></small>
-                                <h1 class="card-title wow animate__fadeInUp" data-wow-duration="1.2s">Who Am I</h1>
+                                <h1 class="card-title wow animate__fadeInUp" data-wow-duration="1.2s">I am<span
+                                        class="typing"></span> </h1>
                                 <p class="card-text wow animate__fadeInUp mb-2" data-wow-duration="1.2s">
-                                    My name is Amir Mohammad Doosti im a creative freelancer and frontend developer i have
+                                    My name is Amir Mohammad Doosti im a creative freelancer and frontend developer i
+                                    have
                                     worked in couple places in frontend cases and animations.
                                 </p>
                                 <p class="wow animate__fadeInUp" data-wow-duration="1.2s">
-                                    Im 23 years old , programming for 2 years and i have got graduated from university at Masters.
+                                    Im 23 years old , programming for 2 years and i have got graduated from university
+                                    at Masters.
                                 </p>
 
                                 <!-- skilss -->
@@ -250,106 +254,159 @@
                             <h4 class="title"> Some of my projects <i class="fa fa-picture-o ml-1"></i> </h4>
                         </div>
 
-                        <div class="owl-carousel owl-theme wow animate__fadeIn" data-wow-duration="2s">
-                            <!-- 1 -->
-                            <!-- <div class="item">
-                                <div>
-                                    <a href="http://www.elittdg.com/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot1.png" class="project-img img-fluid"
-                                                alt="project_image">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#landing-pages"
+                                    role="tab" aria-controls="landing-pages" aria-selected="false">Landing pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="js-projects-tab" data-toggle="pill" href="#js-projects"
+                                    role="tab" aria-controls="js-projects" aria-selected="true">js projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#animations"
+                                    role="tab" aria-controls="animations" aria-selected="false">animations</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <!-- js projects -->
+                            <div class="tab-pane fade" id="js-projects" role="tabpanel"
+                                aria-labelledby="js-projects-tab">
+                                <!-- owl carousel -->
+                                <div class="owl-carousel owl-theme">
+                                    <!-- 1 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="https://game-amir-doosti.fandogh.cloud/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/rockpaperscissors.jpg" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Rock Paper Scissors game </h5>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                            </div> -->
-                            <!-- 2 -->
-                            <div class="item">
-                                <div>
-                                    <a href="https://payaab.ir/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot2.png" class="project-img img-fluid"
-                                                alt="project_image">
+
+                            </div>
+
+                            <!-- landing pages -->
+                            <div class="tab-pane fade show active" id="landing-pages" role="tabpanel"
+                                aria-labelledby="landing-pages-tab">
+                                <!-- owl carousel -->
+                                <div class="owl-carousel owl-theme wow animate__fadeIn" data-wow-duration="2s">
+                                    <!-- 2 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="https://payaab.ir/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot2.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Map layers diffrences </h5>
+                                            </a>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="http://templates.elittdg.com/luxury/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot3.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Landing page </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="http://templates.elittdg.com/building/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot4.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Building landing page </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="http://templates.elittdg.com/game-center/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot5.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Game center landing page </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="http://templates.elittdg.com/Shine/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot6.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Landing page </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 7 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="http://morerami.ir/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot7.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Portfolio page </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 8 -->
+                                    <div class="item">
+                                        <div>
+                                            <a href="http://proshop-rtmeysam.fandogh.cloud/" target="_blank">
+                                                <div class="img-container">
+                                                    <img src="img/Screenshot8.png" class="project-img img-fluid"
+                                                        alt="project_image">
+                                                </div>
+                                                <h5 class="text-white-50 mt-4 text-center"> Shop </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- owl carousel end -->
+                            </div>
+
+                            <!-- with some little animations -->
+                            <div class="tab-pane fade" id="animations" role="tabpanel" aria-labelledby="animations-tab">
+                                <div class="container-fluid">
+                                    <h5 class="text-white"> I didnt add anything here yet... </h5>
                                 </div>
                             </div>
-                            <!-- 3 -->
-                            <div class="item">
-                                <div>
-                                    <a href="http://templates.elittdg.com/luxury/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot3.png" class="project-img img-fluid"
-                                                alt="project_image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- 4 -->
-                            <div class="item">
-                                <div>
-                                    <a href="http://templates.elittdg.com/building/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot4.png" class="project-img img-fluid"
-                                                alt="project_image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                             <!-- 5 -->
-                            <div class="item">
-                                <div>
-                                    <a href="http://templates.elittdg.com/game-center/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot5.png" class="project-img img-fluid"
-                                                alt="project_image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- 6 -->
-                            <div class="item">
-                                <div>
-                                    <a href="http://templates.elittdg.com/Shine/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot6.png" class="project-img img-fluid"
-                                                alt="project_image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- 7 -->
-                            <div class="item">
-                                <div>
-                                    <a href="http://morerami.ir/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot7.png" class="project-img img-fluid"
-                                                alt="project_image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- 8 -->
-                            <div class="item">
-                                <div>
-                                    <a href="http://proshop-rtmeysam.fandogh.cloud/" target="_blank">
-                                        <div class="img-container">
-                                            <img src="img/Screenshot8.png" class="project-img img-fluid"
-                                                alt="project_image">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+
                         </div>
+                        <!-- tab content end -->
 
                     </div>
-
+                    <!-- col-md-12 end -->
                 </div>
-
+                <!-- row end -->
             </div>
+            <!-- container fluid end -->
         </section>
-
+        <!-- projects section end -->
     </main>
-
 
     <!-- Footer Area -->
     <footer id="footer">
@@ -361,25 +418,25 @@
                     </div>
                     <div>
                         <h5> <i class="mr-1 fa fa-phone"> </i> 0921 776 9760 </h5>
-                        <h5 class="mt-4"> <a href="https://t.me/Man_kind"> <i class="mr-1 fa fa-telegram"></i> Man_kind </a> </h5>
+                        <h5 class="mt-4"> <a href="https://t.me/Man_kind"> <i class="mr-1 fa fa-telegram"></i> Man_kind
+                            </a> </h5>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-
     <div id="intro">
         
         <div class="intro-text">
             <h1 class="hide">
-                <span class="text-of-intro text-white-50"> Welcome To </span>
+                <span class="text-of-intro text-white"> Welcome To </span>
             </h1>
             <h1 class="hide">
-                <span class="text-of-intro text-white-50"> My Page </span>
+                <span class="text-of-intro text-white"> My Page </span>
             </h1>
             <h1 class="hide">
-                <span class="text-of-intro text-white-50"> People. </span>
+                <span class="text-of-intro text-white"> People. </span>
             </h1>
         </div>
 
